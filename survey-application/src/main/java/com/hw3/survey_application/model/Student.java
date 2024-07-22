@@ -20,10 +20,10 @@ public class Student {
 	@Column(name="first_name", nullable=false)
     private String firstName;
 	
-	@Column(name="lastName", nullable=false)
+	@Column(name="last_name", nullable=false)
     private String lastName;
 	
-	@Column(name="streetAddress", nullable=false)
+	@Column(name="street_address", nullable=false)
     private String streetAddress;
 	
 	@Column(name="city", nullable=false)
@@ -35,22 +35,22 @@ public class Student {
 	@Column(name="zip", nullable=false)
     private String zip;
 	
-	@Column(name="telephoneNumber", nullable=false)
+	@Column(name="telephone_number", nullable=false)
     private String telephoneNumber;
 	
 	@Column(name="email", nullable=false)
     private String email;
 	
-	@Column(name="dateOfSurvey", nullable=false)
+	@Column(name="date_of_survey", nullable=false)
     private LocalDate dateOfSurvey;
 	
-	@Column(name="likedMost", nullable=false)
+	@Column(name="liked_most", nullable=false)
     private String likedMost;
 	
-	@Column(name="interestSource", nullable=false)
+	@Column(name="interest_source", nullable=false)
     private String interestSource;
 	
-	@Column(name="recommendationLikelihood", nullable=false)
+	@Column(name="recommendation_likelihood", nullable=false)
     private String recommendationLikelihood;
 
 	
