@@ -26,7 +26,7 @@ pipeline {
 			                        
 						env.BUILD_TIMESTAMP = "${BUILD_TIMESTAMP}".replaceAll(/[^\w.-]/, '-')
 						def dockerfilePath = 'survey-application'
-           				 	def customImageTag = "johnstephengutam/swe645h3_docker_repo	:${env.BUILD_TIMESTAMP}"
+           				 	def customImageTag = "johnstephengutam/swe645h3_docker_repo:${env.BUILD_TIMESTAMP}"
             					def customImage = docker.build(customImageTag, dockerfilePath)
 			                } 
 				}
@@ -35,7 +35,7 @@ pipeline {
 		stage("Pushing Image to DockerHub"){
 			steps{
 				script{
-					sh "docker push johnstephengutam/mywebapp:${env.BUILD_TIMESTAMP}"
+					sh "docker push johnstephengutam/swe645h3_docker_repo:${env.BUILD_TIMESTAMP}"
 				}
 			}
 		}
