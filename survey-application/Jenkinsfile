@@ -28,7 +28,7 @@ pipeline {
 						def dockerfilePath = 'survey-application'
            				 	def customImageTag = "johnstephengutam/swe645h3_docker_repo	:${env.BUILD_TIMESTAMP}"
             					def customImage = docker.build(customImageTag, dockerfilePath)
-			                }
+			                } 
 				}
 			}
 		}
